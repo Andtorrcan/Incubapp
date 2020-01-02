@@ -6,7 +6,6 @@ const routerOptions: ExtraOptions = {
   useHash: false,
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
-  
 };
 
 const routes: Routes = [

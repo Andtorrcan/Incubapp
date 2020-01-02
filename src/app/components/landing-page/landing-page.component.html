@@ -110,7 +110,7 @@
 
         <div class="row justify-content-center">
             <div class="col-10 col-sm-10 col-md-10 col-lg-10 text-section-4">
-                Con el apoyo de 2 arquitectos de software expertos en computación en la nube con AWS, se han vinculado más de <label class="text-color-orange"><strong>214</strong></label> estudiantes universitarios <label class="text-color-orange"><strong>y de colegios</strong></label>                al semillero de desarrollo de software.
+                Con el apoyo de 2 arquitectos de software expertos en computación en la nube con AWS, se han vinculado más de 214 estudiantes universitarios y de colegios al semillero de desarrollo de software.
             </div>
         </div>
         <br>
@@ -132,8 +132,8 @@
                                 <div class="separator-orange-section-4"></div>
                             </div>
                             <div class="col-12 text-card-section-4  ">
-                                Es arquitecto de software con 15 años de experiencia. Posee un doctorado en Mac hine Learning de la Universidad de Manchester de Inglaterra. Es autor del libro “Building Serverless Microservices in Python" y del curso “Serverless Microservices on AWS
-                                in 10 Hours” disponible en la plataforma Udemy.</div>
+                                Es arquitecto de software con 15 años de experiencia. Posee un doctorado en Machine Learning de la Universidad de Manchester de Inglaterra. Es autor del libro “Building Serverless Microservices in Python" y del curso “Serverless Microservices on AWS in
+                                10 Hours” disponible en la plataforma Udemy.</div>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
    <video src="./assets/videos/richard-example.mp4" width="100%" controls></video>
                         -->
 
-                        <img src="./assets/img/walter.jfif" width="100%" alt="">
+                        <img src="./assets/img/walter.png" width="100%" alt="">
                         <button class="button-see-video-external"><i class="far fa-play-circle" style="margin-right: 15px;"></i>Ver video</button>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-7">
@@ -158,7 +158,7 @@
                                 <div class="separator-orange-section-4"></div>
                             </div>
                             <div class="col-12 text-card-section-4  ">
-                                Es arquitecto de software de más de 15 años de experiencia experto en implementación de sistemas escalables con Amazon Web Services. Posee una certificación en Java y 5 certificaciones de Amazon:
+                                Es arquitecto de software con más de 15 años de experiencia. Es experto en implementación de sistemas escalables con Amazon Web Services. Posee una certificación en Java y 5 certificaciones de Amazon:
                                 <ul id="menu-card-section-4">
                                     <li><i class="fas fa-check icon-list-section-5"></i>Java SE 8 Programmer</li>
                                     <li><i class="fas fa-check icon-list-section-5"></i>AWS Certified Solutions Architect Associate</li>
@@ -257,7 +257,7 @@
                         <div class="separator-orange-section-6"></div>
                     </div>
                     <div class="col-12 text-section-6">
-                        Para finales del 2019 empezamos a expandir los semilleros a los colegios para acortar la brecha de los estudiantes hasta su primer emprendimiento, permitiéndoles aprovechar aún más materias de la universidad.
+                        Para finales del 2019 empezamos a expandir los semilleros a los colegios para acortar la brecha de los estudiantes hasta su primer emprendimiento, permitiéndoles aprovechar aún más las materias de la universidad.
                     </div>
                 </div>
             </div>
@@ -306,7 +306,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-sm-12 col-md-11 col-lg-9 col-xl-8" style="margin-bottom: 50px;">
-                <video src="./assets/videos/richard-example.mp4" width="100%" controls></video>
+                <video src="./assets/videos/taller.mp4" width="100%" controls></video>
             </div>
         </div>
         <div class="row justify-content-around">
@@ -393,7 +393,7 @@
                                     </div>
                                 </mat-step>
                                 <mat-step>
-                                    <ng-template matStepLabel>Datos del padre</ng-template>
+                                    <ng-template matStepLabel>Datos de los Padres</ng-template>
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group full-width">
@@ -430,7 +430,13 @@
                                                 </mat-form-field>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-6">
+                                        <div class="col-12 col-lg-6" style="text-align: center; color: white !important;" color>
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button style="margin-right: 15px;" value="Madre">Madre </mat-radio-button>
+                                                <mat-radio-button value="Padre">Padre</mat-radio-button>
+                                            </mat-radio-group>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
                                             <small style="color: white;">* : Campo obligatorio.</small>
                                         </div>
                                         <div class="col-12" style="text-align: right !important;">
@@ -471,4 +477,7 @@
         </div>
     </div>
 </footer>
-<a class="back-to-top" data-toggle="tooltip" data-placement="top" title="Volver al inicio"><img src="./assets/img/back-to-top.svg" alt=""></a>
+<!--Scroll to top-->
+<button [ngClass]="{'show-scroll': showScroll}" (click)="scrollToTop()" [routerLink]="['']" fragment="" class="scroll-to-top">
+    <img src="./assets/img/back-to-top.svg" alt="">
+</button>
